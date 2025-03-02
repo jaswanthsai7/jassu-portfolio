@@ -3,7 +3,7 @@
     "name": "Jaswanth Sai",
     "title": "Full Stack Developer",
     "subTitle": "I develop web applications",
-    "description": "As a React and .Net developer with 1.8+ years of experience, I have honed my skills in JavaScript and am currently learning next js to expand my expertise. I pride myself on being a quick learner and attentive listener, which allows me to collaborate effectively with clients to create efficient and scalable solutions. My focus is on developing user-friendly applications that solve real-world problems.",
+    "description": "As a React and .Net developer with 1.8 + years of experience, I have honed my skills in JavaScript and am currently learning next js to expand my expertise. I pride myself on being a quick learner and attentive listener, which allows me to collaborate effectively with clients to create efficient and scalable solutions. My focus is on developing user-friendly applications that solve real-world problems.",
     "quote": "Live the Life as you want",
     "exp_year": "1.8+",
     "address": "Navi Mumbai , India",
@@ -12,13 +12,13 @@
     "contactEmail": "jasvanthsai7@gmail.com",
     "avatar": {
       "public_id": "portfolio3/1713995155677-122l5x.webp",
-      "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1713995155677-122l5x.webp"
+      "url": "https://avatars.githubusercontent.com/u/112178981?s=400&u=b246029b72573d76e1082467417e705193212f3a&v=4"
     },
     "alternateAvatars": [
       {
         "_id": "676e772d8a9e1d0a8b0647ca",
         "public_id": "portfolio3/1713996156944-1hro1b.webp",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1713996156944-1hro1b.webp"
+        "url": "https://avatars.githubusercontent.com/u/112178981?s=400&u=b246029b72573d76e1082467417e705193212f3a&v=4"
       }
     ]
   },
@@ -33,18 +33,17 @@
   "timeline": [
     {
       "company_name": "Cogitate",
-      "summary": "Contributed to the development of a new social networking platform targeting niche communities.",
+      "summary": "Contributed to multiple client-specific implementations of the Digital Edge Billing product, providing tailored solutions to meet diverse business needs across different industries.",
       "sequence": 6,
-      "startDate": "2023-11-13T00:00:00.000Z",
-      "endDate": "2024-03-13T00:00:00.000Z",
-      "jobTitle": "Backend Developer",
-      "jobLocation": " Los Angeles, CA",
+      "startDate": "2023-07-03T00:00:00.000Z",
+      "endDate": "",
+      "jobTitle": "Associate Full Stack Developer",
+      "jobLocation": " Navi Mumbai, MH",
       "bulletPoints": [
-        "Developed scalable backend services using Python and Django framework.",
-        "\nImplemented user authentication and authorization using OAuth 2.0 and JWT tokens.",
-        "\nDesigned and optimized database schemas for performance and scalability.",
-        "\nImplemented real-time messaging features using WebSockets and Redis.",
-        "\nWorked closely with frontend developers to design APIs and ensure smooth integration with the frontend."
+        "Developed modular, reusable React components and custom hooks to improve code organization, maintainability. Seamlessly integrated EPay payment solutions with robust error handling, ensuring secure payment processing via backend APIs.",
+        "\nImplemented secure SFTP and FTP solutions for seamless file transfers to clients like Wells Fargo. Integrated and optimized third-party payment systems with OneInc, leveraging REST APIs to enable secure, scalable, and efficient payment processing.",
+        "\nDeveloped a comprehensive and dynamic email system capable of sending multiple personalized emails with attachments efficiently. Ensured logging for high system reliability and better email management.",
+        "\nDelivered and optimized print services functionality for PDF generation and printing. Implemented scalable solutions for high-volume document processing, leveraging services for streamlined backend integration."
       ],
       "forEducation": true,
       "enabled": true,
@@ -516,18 +515,8 @@
   ],
   "social_handles": [
     {
-      "platform": "Instagram",
-      "url": "https://www.instagram.com/tehseen.01/",
-      "image": {
-        "public_id": "1708718250873-3038n7.webp",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718250873-3038n7.webp"
-      },
-      "enabled": true,
-      "_id": "65b3ea4feb20546ae6d4641d"
-    },
-    {
       "platform": "LinkedIn",
-      "url": "http://www.linkedin.com/in/tehseen01",
+      "url": "https://www.linkedin.com/in/jaswanth-sai-49b6aa234/",
       "image": {
         "public_id": "1708718263294-2lfj67.webp",
         "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718263294-2lfj67.webp"
@@ -537,23 +526,13 @@
     },
     {
       "enabled": true,
-      "platform": "Twitter",
-      "url": "https://x.com/tehseen_type",
+      "platform": "Github",
+      "url": "https://github.com/jaswanthsai7",
       "image": {
         "public_id": "1708718328750-d4jsq.webp",
         "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718328750-d4jsq.webp"
       },
       "_id": "65b3e47cb48589dfcae185bd"
-    },
-    {
-      "enabled": true,
-      "platform": "Facebook",
-      "url": "#",
-      "image": {
-        "public_id": "1708718346601-xldm.webp",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718346601-xldm.webp"
-      },
-      "_id": "65b3e43cb48589dfcae1856c"
     }
   ],
   "services": [

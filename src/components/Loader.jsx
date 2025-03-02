@@ -26,7 +26,7 @@ const Loader = ({ setHideLoader }) => {
         <motion.div
             initial={{ y: 0 }}
             animate={{ y: "-100%" }}
-            transition={{ delay: 2.5, duration: 1, type: "tween" }}
+            transition={{ delay: 1.5, duration: 1, type: "tween" }}
             onAnimationComplete={() => setHideLoader(false)}
             className="fixed top-0 left-0 z-[9999] w-full h-full bg-background"
         >
@@ -36,9 +36,9 @@ const Loader = ({ setHideLoader }) => {
                 </Transition>
                 <div className="flex flex-col max-md:justify-between max-md:h-full">
                     <Transition transition={{ delay: 0.4 }}>
-                        <div className="text-3xl md:text-5xl w-full md:w-2/5 whitespace-pre-wrap">
+                        <div className="text-3xl md:text-4xl w-full md:w-2/5 whitespace-pre-wrap">
                             <OpacityTransition>
-                                I develop 3D visuals, user interfaces and web applications
+                                I develop web applications
                             </OpacityTransition>
                         </div>
                     </Transition>

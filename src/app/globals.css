@@ -30,7 +30,7 @@
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
 
-    --primary: 190.29deg 51.22% 59.8%;
+    --primary: 868.29deg 52.22% 27.8%;
     --primary-foreground: 240 5.9% 10%;
 
     --secondary: 225deg 6.67% 11.76%;
@@ -46,6 +46,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 @layer base {
   body {
     @apply bg-background text-foreground overflow-x-hidden;
@@ -61,21 +62,118 @@ html {
 }
 
 .blob {
-  background: conic-gradient(from 2.35rad, #c76000, rgba(7, 29, 228, 0.5));
+  background: conic-gradient(from 2.35rad, #60c700, rgba(7, 213, 228, 0.5));
 }
 
 .text-reveal {
   display: inline;
-  background: linear-gradient(
-    to right,
-    rgba(var(--opacity-color), 1) 0%,
-    rgba(var(--opacity-color), 1) 50%,
-    rgba(var(--opacity-color), 0.2) 50%,
-    rgba(var(--opacity-color), 0.2) 100%
-  );
+  background: linear-gradient(to right,
+      rgba(var(--opacity-color), 1) 0%,
+      rgba(var(--opacity-color), 1) 50%,
+      rgba(var(--opacity-color), 0.2) 50%,
+      rgba(var(--opacity-color), 0.2) 100%);
   background-clip: text;
   background-size: 200% 100%;
   background-position: right bottom;
   color: transparent;
   background-repeat: no-repeat;
+}
+
+
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
+}
+
+
+
+.scroll {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  position: relative;
+  animation: down 1.5s infinite;
+}
+
+.scroll::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 18px;
+  width: 18px;
+  height: 18px;
+  border-left: 2px solid #333;
+  border-bottom: 2px solid #333;
+  transform: rotate(-45deg);
+}
+.custom-margin {
+  margin-top: 5.25rem !important;
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px); /* Move up by 10px */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@-webkit-keyframes down {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translateY(15px);
+  }
+
+  40% {
+    transform: translate(0);
+  }
+}
+
+
+@keyframes scroll {
+  0% {
+    height: 40px;
+  }
+
+  30% {
+    height: 70px;
+  }
+
+  60% {
+    height: 40px;
+  }
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    height: 40px;
+  }
+
+  30% {
+    height: 70px;
+  }
+
+  60% {
+    height: 40px;
+  }
 }

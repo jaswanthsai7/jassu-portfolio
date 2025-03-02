@@ -7,7 +7,6 @@ import { SlideIn, Transition } from "./ui/Transitions";
 import { TextReveal } from "./ui/Typography";
 import { ArrowUpRight } from "./ui/Icons";
 import LoaderWrapper from "./LoaderWrapper";
-
 const Hero = ({ about }) => {
     return (
         <section className="h-dvh w-dvw overflow-hidden relative">
@@ -28,10 +27,12 @@ const Hero = ({ about }) => {
                             <h2 className="md:text-7xl text-4xl font-bold overflow-hidden">
                                 <SlideIn>Hello! I&apos;m {about.name}</SlideIn>
                             </h2>
+
                             <h1 className="md:text-7xl text-3xl overflow-hidden">
                                 <SlideIn>{about.title}</SlideIn>
                             </h1>
                         </div>
+
                         <Transition viewport={{ once: true }} className="w-full">
                             <p className="opacity-70 md:text-xl py-4 w-10/12 md:w-2/3 mx-auto flex flex-wrap justify-center gap-2">
                                 {about.subTitle.split(" ").map((word, index) => (
@@ -46,10 +47,20 @@ const Hero = ({ about }) => {
                             >
                                 <TextReveal>Let&apos;s talk</TextReveal>
                                 <ArrowUpRight />
+
                             </Link>
                         </Transition>
+                        <a href="#about" className="custom-margin">
+                            <div className="container" >
+                                <div className="field">
+                                    <div className="scroll"></div>
+                                </div>
+                            </div>
+                        </a>
+
                     </div>
                 </div>
+
             </LoaderWrapper>
         </section>
     );

@@ -1,3 +1,5 @@
+import About from "@/components/About";
+import Header from "@/components/Header";
 import Hero from "@/components/hero";
 
 export default async function Home() {
@@ -16,7 +18,9 @@ export default async function Home() {
 
   return (
     <main className="relative">
+      <Header social={social_handles} />
       <Hero about={about} />
+      <About about={about} timeline={timeline} />
     </main>
   );
 }
