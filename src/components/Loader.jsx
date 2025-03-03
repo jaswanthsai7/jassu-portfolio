@@ -26,7 +26,7 @@ const Loader = ({ setHideLoader }) => {
         <motion.div
             initial={{ y: 0 }}
             animate={{ y: "-100%" }}
-            transition={{ delay: 1.5, duration: 1, type: "tween" }}
+            transition={{ delay: 1, duration: 1, type: "tween" }}
             onAnimationComplete={() => setHideLoader(false)}
             className="fixed top-0 left-0 z-[9999] w-full h-full bg-background"
         >

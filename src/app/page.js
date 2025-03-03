@@ -1,6 +1,8 @@
 import About from "@/components/About";
 import Header from "@/components/Header";
 import Hero from "@/components/hero";
+import Projects from "@/components/projects";
+import Skills from "@/components/Skills";
 
 export default async function Home() {
   const portfolio = (await import("../../dummy.json")).default;
@@ -21,6 +23,8 @@ export default async function Home() {
       <Header social={social_handles} />
       <Hero about={about} />
       <About about={about} timeline={timeline} />
+      <Skills skills={skills}/>
+      <Projects projects={projects} />
     </main>
   );
 }

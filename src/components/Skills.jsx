@@ -1,11 +1,15 @@
 "use client";
 
 import { ParallaxText } from "./ui/ParallaxText";
+import SectionHeader from "./SectionHeader";
 
 
 function Skills({ skills }) {
   return (
     <section id="skills">
+      <div className="md:p-8 p-4">
+        <SectionHeader title={"Skills"} />
+      </div>
       <ParallaxText baseVelocity={-5}>
         {skills.map((skill) =>
           skill.enabled ? (

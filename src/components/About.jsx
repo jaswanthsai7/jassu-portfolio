@@ -4,11 +4,11 @@ import { Dispatch, SetStateAction, useState } from "react";
 import { motion } from "motion/react";
 import { OpacityTextReveal, SlideIn, Transition } from "./ui/Transitions";
 import { formatDate } from "../utils";
+import SectionHeader from "./SectionHeader";
 
 
 const About = ({ about, timeline }) => {
   const [activeIndex, setActiveIndex] = useState(0);
-
   const education = timeline
     .filter((line) => line.forEducation && line.enabled === true)
     .sort((a, b) => a.sequence - b.sequence);
@@ -18,19 +18,23 @@ const About = ({ about, timeline }) => {
       className="grid md:grid-cols-[1.8fr_1fr] gap-x-10 py-20 px-4 md:px-8 relative"
       id="about"
     >
+      <SectionHeader title={"ABOUT"} />
+      <br />
       <div>
-        <h3 className="md:text-5xl text-2xl font-bold overflow-hidden uppercase pb-8">
+        {/* <h6 className="md:text-4xl text-2xl font-bold overflow-hidden uppercase pb-8">
           <SlideIn>
             <OpacityTextReveal>{about.quote}</OpacityTextReveal>
           </SlideIn>
-        </h3>
+        </h6> */}
         <Transition
           viewport={{ once: true }}
           className="md:text-4xl tracking-tighter"
         >
           <OpacityTextReveal>{about.description}</OpacityTextReveal>
         </Transition>
-        <div className="pt-10">
+
+        <div className="pt-10" id="experience">
+          <SectionHeader title={"Experience"} />
           <div className="py-10 overflow-hidden grid w-full">
             {education.map((edu, index) => (
               <Transition key={edu._id}>
@@ -73,6 +77,7 @@ const TimelineCard = ({
   index,
 }) => (
   <section id="about" className="border-b border-primary/20 py-4">
+
     <div
       className="flex items-center justify-between gap-4 cursor-pointer select-none"
       onClick={() => setActiveIndex(index)}
@@ -116,7 +121,7 @@ const TimelineCard = ({
               formatDate(timeline.startDate).year}
           </span>
           {" - "}
-          {timeline?.year || timeline?.month? <span className="italic">
+          {timeline?.year || timeline?.month ? <span className="italic">
             {formatDate(timeline.endDate).month +
               ", " +
               formatDate(timeline.endDate).year}

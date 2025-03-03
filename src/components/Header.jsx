@@ -168,6 +168,14 @@ const navLinks = [
     href: "#about",
   },
   {
+    title: "Experience",
+    href: "#experience",
+  },
+  { 
+    title: "Skills", 
+    href: "#skills" 
+  },
+  {
     title: "Projects",
     href: "#projects",
   },
