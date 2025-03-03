@@ -44,7 +44,7 @@ export function ParallaxText({
     clamp: false,
   });
   const x = useTransform(baseX, (v) => `${wrap(0, -25, v)}%`);
-  const directionFactor = useRef<number>(1);
+  const directionFactor = useRef(1);
 
   useAnimationFrame((t, delta) => {
     const adjustedBaseVelocity = baseVelocity * 0.1;

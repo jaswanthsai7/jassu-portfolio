@@ -168,10 +168,6 @@ const navLinks = [
     href: "#about",
   },
   {
-    title: "Services",
-    href: "#services",
-  },
-  {
     title: "Projects",
     href: "#projects",
   },
