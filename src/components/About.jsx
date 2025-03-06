@@ -2,6 +2,7 @@
 
 import { Dispatch, SetStateAction, useState } from "react";
 import { motion } from "motion/react";
+import { SectionHeading } from "./ui/Typography";
 import { OpacityTextReveal, SlideIn, Transition } from "./ui/Transitions";
 import { formatDate } from "../utils";
 import SectionHeader from "./SectionHeader";
@@ -18,7 +19,19 @@ const About = ({ about, timeline }) => {
       className="grid md:grid-cols-[1.8fr_1fr] gap-x-10 py-20 px-4 md:px-8 relative"
       id="about"
     >
-      <SectionHeader title={"ABOUT"} />
+      {/* <Transition>
+        <span className="blob size-1/2 absolute top-20 left-0 blur-[100px]" />
+      </Transition> */}
+      {/* <br /> */}
+      <div className="relative">
+        <SectionHeading className="absolute bottom-1 left-0">
+          <SlideIn className="text-white/40">ABOUT</SlideIn>
+        </SectionHeading>
+
+      </div>
+      {/* <br />
+      <SectionHeader title={"ABOUT"} /> */}
+
       <br />
       <div>
         {/* <h6 className="md:text-4xl text-2xl font-bold overflow-hidden uppercase pb-8">
@@ -33,7 +46,7 @@ const About = ({ about, timeline }) => {
           <OpacityTextReveal>{about.description}</OpacityTextReveal>
         </Transition>
 
-        <div className="pt-10" id="experience">
+        {education.length > 0 ? <div className="pt-10" id="experience">
           <SectionHeader title={"Experience"} />
           <div className="py-10 overflow-hidden grid w-full">
             {education.map((edu, index) => (
@@ -47,7 +60,7 @@ const About = ({ about, timeline }) => {
               </Transition>
             ))}
           </div>
-        </div>
+        </div> : null}
       </div>
       <div className="relative">
         <div className="sticky top-6">

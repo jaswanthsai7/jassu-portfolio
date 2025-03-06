@@ -25,10 +25,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <head />
+      <head >
+
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      </head>
       <body className={poppins.className}>
         <VariantProvider>{children}</VariantProvider>
       </body>
+      
     </html>
   );
 }
