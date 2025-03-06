@@ -45,7 +45,7 @@
         "\nDeveloped a comprehensive and dynamic email system capable of sending multiple personalized emails with attachments efficiently. Ensured logging for high system reliability and better email management.",
         "\nDelivered and optimized print services functionality for PDF generation and printing. Implemented scalable solutions for high-volume document processing, leveraging services for streamlined backend integration."
       ],
-      "forEducation": true,
+      "forEducation": false,
       "enabled": true,
       "_id": "65f1fe900556c3f887e9db94"
     }
