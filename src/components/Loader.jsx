@@ -30,6 +30,8 @@ const Loader = ({ setHideLoader }) => {
             onAnimationComplete={() => setHideLoader(false)}
             className="fixed top-0 left-0 z-[9999] w-full h-full bg-background"
         >
+            <span className="blob absolute top-0 left-0 w-full h-full blur-[100px] pointer-events-none" />
+
             <div className="p-4 md:p-10 flex flex-col md:justify-between max-md:gap-8 w-full h-full">
                 <Transition transition={{ delay: 0.2 }}>
                     <span className="font-semibold text-white/40">ThePortfolio</span>

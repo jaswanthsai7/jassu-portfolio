@@ -3,7 +3,8 @@
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 import SectionHeader from "./SectionHeader";
-
+import { SlideIn, Transition } from "./ui/Transitions";
+import { SectionHeading } from "./ui/Typography";
 
 function Projects({ projects }) {
   const [filteredProjects, setFilteredProjects] = useState(projects);
@@ -27,14 +28,24 @@ function Projects({ projects }) {
 
   return (
     <section className="md:p-8 p-4 mt-10 relative" id="projects">
-      <SectionHeader title={"Projects"}/>
+      {/* <SectionHeader title={"Projects"} /> */}
+      <SectionHeading>
+        <SlideIn className="text-white/40">PROJECTS</SlideIn>
+      </SectionHeading>
+
+      <span className="blob size-1/2 absolute top-20 left-0 blur-[100px]" />
+
       <motion.div className="grid md:grid-cols-1 md:gap-6 gap-3 relative">
 
         {filteredProjects.map((project, projectIndex) => (
           <div key={projectIndex} className="mb-8">
-            <div className="text-white/30"><span className="text-xl font-semibold mb-2">Title :</span> {project.title}</div>
-            <div className="text-white/30"><span className="text-xl font-semibold mb-2">Description :</span> {project.description}</div>
-
+            <div className="text-white">
+              <span className="text-xl font-semibold mb-2 text-white/30">Title:</span> {project.title}
+            </div>
+            <div className="text-white">
+              <span className="text-xl font-semibold mb-2 text-white/30">Description:</span> {project.description}
+            </div>
+            <SlideIn className="text-xl font-semibold mb-2 mt-2 text-white/40">KEY CONTRIBUTIONS :</SlideIn>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
               {project.keyContributions.map((contribution, index) => (
                 <Card key={index} title={contribution.title} description={contribution.description} />
