@@ -1,11 +1,11 @@
-import About from "../../src/components/About";
-import Contact from "../../src/components/Contact";
-import Header from "../../src/components/Header";
-import Hero from "../../src/components/hero";
-import Projects from "../../src/components/projects";
-import Skills from "../../src/components/Skills";
-import Timeline from "../../src/components/Timeline";
-import { Transition } from "../../src/components/ui/Transitions";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Header from "@/components/Header";
+import Hero from "@/components/hero";
+import Projects from "@/components/projects";
+import Skills from "@/components/Skills";
+import Timeline from "@/components/Timeline";
+import { Transition } from "@/components/ui/Transitions";
 
 export default async function Home() {
   const portfolio = (await import("../../dummy.json")).default;
