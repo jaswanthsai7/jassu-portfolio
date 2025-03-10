@@ -19,6 +19,9 @@ export default async function Home() {
     social_handles,
     timeline,
     email,
+    service_id,
+    user_id,
+    template_id
   } = portfolio;
 
   return (
@@ -32,7 +35,7 @@ export default async function Home() {
       <Timeline timeline={timeline}/>
       <Skills skills={skills}/>
       <Projects projects={projects} />
-      <Contact email={email} social_handle={social_handles} about={about} />
+      <Contact email={email} social_handle={social_handles} about={about} service_id={service_id} user_id={user_id} template_id ={template_id}/>
     </main>
   );
 }
