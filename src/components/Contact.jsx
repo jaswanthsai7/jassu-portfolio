@@ -34,9 +34,7 @@ const Contact = ({ email, social_handle, about, service_id, user_id, template_id
     e.preventDefault();
     setStatus("SENDING");
 
-    try {
-      console.log("Form data:", formData);
-      
+    try {    
       sendEmail(formData)
 
     } catch (error) {
