@@ -21,7 +21,7 @@ const Header = ({ social }) => {
       transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] },
     },
     closed: {
-      clipPath: `inset(5% 12% 93% 85% round ${isMobile ? 0 : "24px"})`,
+      clipPath: `inset(5% 20% 93% 85% round ${isMobile ? 0 : "24px"})`,
       transition: {
         duration: 0.75,
         delay: 0.35,
@@ -42,7 +42,7 @@ const Header = ({ social }) => {
         initial={false}
         animate={isActive ? "open" : "closed"}
         variants={variants}
-        className="absolute top-0 right-0 md:-top-6 md:-right-6 w-dvw md:w-[480px] h-dvh md:h-[calc(60dvh_-_2.5rem)] bg-primary"
+        className="absolute top-0 right-0 md:-top-6 md:-right-6 w-dvw md:w-[480px] h-dvh md:h-[calc(80dvh_-_2.5rem)] bg-primary"
       >
         {isActive && (
           <nav className="flex justify-between flex-col w-full h-full px-10 pt-[100px] pb-[50px]">
@@ -131,7 +131,7 @@ function Button({
   toggleMenu,
 }) {
   return (
-    <div className="absolute md:top-0 top-4 right-4 md:right-0 w-[100px] h-10 rounded-full overflow-hidden cursor-pointer">
+    <div className="absolute md:top-0 top-4 right-4 md:right-0 w-[100px] h-10 rounded-full overflow-hidden cursor-pointer" >
       <motion.div
         className="relative w-full h-full"
         animate={{ top: isActive ? "-100%" : "0%" }}

@@ -1,14 +1,15 @@
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
-import { ChangeEvent, FormEvent, useEffect, useState } from "react";
+import {  useEffect, useState } from "react";
 import { cn } from "../utils/cn";
 import Link from "next/link";
 import { SectionHeading, TextReveal } from "./ui/Typography";
 import { SlideIn, Transition } from "./ui/Transitions";
 import { Input, Textarea } from "./ui/Input";
+import emailjs from 'emailjs-com';
 
-const Contact = ({ email, social_handle, about }) => {
+const Contact = ({ email, social_handle, about, service_id, user_id, template_id }) => {
   const [status, setStatus] = useState("IDLE");
   const [statusText, setStatusText] = useState("");
 
@@ -33,27 +34,28 @@ const Contact = ({ email, social_handle, about }) => {
     e.preventDefault();
     setStatus("SENDING");
 
-    try {
-      console.log("Form data:", formData);
+    try {    
+      sendEmail(formData)
 
-       // Use SMTPJS to send the email
-    window.Email.send({
-      Host: 'smtp.yourisp.com', // Use a service like smtp.yourisp.com, or your service of choice
-      Username: 'your-email@example.com', // Replace with your email address
-      To: 'recipient@example.com', // Replace with recipient's email
-      From: email,
-      Subject: subject,
-      Body: message,
-    })
-      .then(function (response) {
-        setResponseMessage('Email sent successfully!');
-        console.log(response);
-      })
-      .catch(function (error) {
-        setResponseMessage('Failed to send email.');
-        console.error(error);
-      });
-      setTimeout(() => {
+    } catch (error) {
+      setStatus("ERROR");
+      setStatusText("Error in sending message: " + error.message);
+      console.error("Error sending message:", error.message);
+    }
+  };
+
+  const sendEmail = (formData) => {
+
+    const templateParams = {
+      from_name: 'noreply@jassu-portfolio.com',
+      to_email: email,
+      subject: formData.subject,
+      message: formData.message + '\n contactEmail :'+ formData.email,
+    };
+
+
+    emailjs.send(service_id, template_id, templateParams, user_id)
+      .then((result) => {
         setStatus("DONE");
         setFormData({
           email: "",
@@ -62,12 +64,12 @@ const Contact = ({ email, social_handle, about }) => {
           subject: "",
         });
         setStatusText("Message sent successfully!");
-      }, 3000);
-    } catch (error) {
-      setStatus("ERROR");
-      setStatusText("Error in sending message: " + error.message);
-      console.error("Error sending message:", error.message);
-    }
+      }, (error) => {
+        console.log(error.text);
+        setStatus("ERROR");
+        setStatusText("Error in sending message: " + error.message);
+        console.error("Error sending message:", error.message);
+      });
   };
 
   useEffect(() => {

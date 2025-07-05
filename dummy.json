@@ -3,7 +3,7 @@
     "name": "Jaswanth Sai",
     "title": "Full Stack Developer",
     "subTitle": "I develop web applications",
-    "description": "As a Full Stack Developer with 1.8 + years of experience, I have honed my skills in React, .Net and am currently learning next js to expand my expertise. I pride myself on being a quick learner and attentive listener, which allows me to collaborate effectively with clients to create efficient and scalable solutions. My focus is on developing user-friendly applications that solve real-world problems.",
+    "description": "As a Full Stack Developer with 2+ years of experience, I have honed my skills in React, .Net and am currently learning next js to expand my expertise. I pride myself on being a quick learner and attentive listener, which allows me to collaborate effectively with clients to create efficient and scalable solutions. My focus is on developing user-friendly applications that solve real-world problems.",
     "quote": "Live the Life as you want",
     "exp_year": "1.8+",
     "address": "Navi Mumbai , India",
@@ -29,6 +29,9 @@
   "_id": "65b3a22c01d900e96c4219ae",
   "username": "portfolio3",
   "email": "jasvanthsai7@gmail.com",
+  "service_id": "service_7hkaogt",
+  "template_id": "template_iirjgiu",
+  "user_id": "50Mu_R9lHVqzCzFIX",
   "role": "admin",
   "timeline": [
     {
@@ -37,14 +40,18 @@
       "sequence": 6,
       "startDate": "2023-07-03T00:00:00.000Z",
       "endDate": "",
-      "jobTitle": "Associate Full Stack Developer",
+      "jobTitle": "Full Stack Developer",
       "jobLocation": " Navi Mumbai, MH",
       "bulletPoints": [
-        "Developed modular, reusable React components and custom hooks to improve code organization, maintainability. Seamlessly integrated EPay payment solutions with robust error handling, ensuring secure payment processing via backend APIs.",
-        "\nImplemented secure SFTP and FTP solutions for seamless file transfers to clients like Wells Fargo. Integrated and optimized third-party payment systems with OneInc, leveraging REST APIs to enable secure, scalable, and efficient payment processing.",
-        "\nDeveloped a comprehensive and dynamic email system capable of sending multiple personalized emails with attachments efficiently. Ensured logging for high system reliability and better email management.",
-        "\nDelivered and optimized print services functionality for PDF generation and printing. Implemented scalable solutions for high-volume document processing, leveraging services for streamlined backend integration."
+        "Delivered tailored client implementations of the Digital Edge Billing platform for the insurance and finance sectors, aligning features with evolving business requirements.",
+        "Built modular, reusable UI components using React.js, accelerating delivery and reducing effort across multiple projects.",
+        "Designed and integrated secure RESTful APIs with ASP.NET Core, ensuring smooth and scalable data exchange between frontend and backend systems.",
+        "Optimized SQL Server performance by refining stored procedures and query logic, improving responsiveness and system efficiency.",
+        "Implemented JWT-based authentication to safeguard APIs and enforce client-specific access controls.",
+        "Integrated Azure Application Insights for real-time telemetry, diagnostics, and performance tracking in production environments.",
+        "Built supporting tools for automated document generation, dynamic email delivery, and secure SFTP/FTP pipelines, reducing manual processes and improving system reliability."
       ],
+
       "forEducation": false,
       "enabled": true,
       "_id": "65f1fe900556c3f887e9db94"
@@ -269,7 +276,10 @@
           "description": "Delivered and optimized print services functionality for PDF generation and printing. Implemented scalable solutions for high-volume document processing, leveraging server-side technologies."
         }
       ],
-      "techStack": ["JavaScript", "Node.js"]
+      "techStack": [
+        "JavaScript",
+        "Node.js"
+      ]
     }
   ],
   "social_handles": [
