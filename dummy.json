@@ -254,31 +254,40 @@
   ],
   "projects": [
     {
-      "_id": "digital-edge-billing",
-      "title": "Digital Edge Billing",
-      "date": "2023 - Present",
-      "description": "Contributed to multiple client-specific implementations of the Digital Edge Billing product, providing tailored solutions to meet diverse business needs across different industries.",
-      "keyContributions": [
-        {
-          "title": "Sypher",
-          "description": "Developed modular, reusable React components and custom hooks to improve code organization and maintainability. Seamlessly integrated EPay payment solutions with robust error handling, ensuring secure payment processing via backend APIs."
-        },
-        {
-          "title": "IH",
-          "description": "Implemented secure SFTP and FTP solutions for seamless file transfers to clients like Wells Fargo. Integrated and optimized third-party payment systems with OneInc, leveraging REST APIs to enable secure, scalable, and efficient payment processing."
-        },
-        {
-          "title": "ARU",
-          "description": "Developed a comprehensive and dynamic email system capable of sending multiple personalized emails with attachments efficiently. Ensured logging for high system reliability and better email management."
-        },
-        {
-          "title": "Embark",
-          "description": "Delivered and optimized print services functionality for PDF generation and printing. Implemented scalable solutions for high-volume document processing, leveraging server-side technologies."
-        }
-      ],
+      "_id": "query-ai",
+      "title": "QueryAI – AI-Powered SQL Query and Data Visualization",
+      "date": "2024 - Present",
+      "liveLink": "https://query-ai-green.vercel.app/",
+      "githubLink": "https://github.com/jaswanthsai7/query-ai/",
       "techStack": [
-        "JavaScript",
-        "Node.js"
+        "React",
+        ".NET Core 8 (REST APIs)",
+        "Vite",
+        "Tailwind CSS",
+        "PostgreSQL",
+        "Gemini API (Google AI)",
+        "Recharts",
+        "JWT",
+        "Vercel",
+        "Render"
+      ],
+      "description": "AI-driven data platform that translates natural language into SQL queries and visualizes structured data interactively, with a secure, scalable full-stack architecture.",
+      "highlights": [
+        "Developed a complex AI-driven platform where users can interact with structured data using natural language.",
+        "Integrated Gemini API for intelligent SQL query generation from user prompts.",
+        "Designed a responsive dashboard UI with React + TailwindCSS.",
+        "Built a real-time chat interface for AI-driven query generation.",
+        "Implemented interactive data grid with pagination, sorting, and backend filtering.",
+        "Visualized dynamic data using Recharts (bar, line, pie).",
+        "Secured backend with .NET Core APIs and JWT-based authentication.",
+        "Added caching and query optimization for faster performance.",
+        "Deployed full stack with CORS, HTTPS, and CI/CD (Vercel + Render)."
+      ],
+      "images": [
+        "/images/queryai/qa-img1.png",
+        "/images/queryai/qa-img2.png",
+        "/images/queryai/qa-img3.png",
+        "/images/queryai/qa-img4.png"
       ]
     }
   ],
