@@ -79,6 +79,14 @@ html {
   background-repeat: no-repeat;
 }
 
+/* global.css or tailwind.config */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
 
 .container {
