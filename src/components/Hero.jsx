@@ -55,7 +55,7 @@ const Hero = ({ about }) => {
                         {/* Download Resume Button */}
                         <Transition viewport={{ once: true }}>
                             <a
-                                href="/resume.pdf" // place this file in your `public/` folder
+                                href="/Nagothi_Jaswanth_Sai_Resume.pdf" // place this file in your `public/` folder
                                 download
                                 className="px-5 py-3 mt-4 rounded-full border border-white/50 flex items-center gap-2 group"
                             >
