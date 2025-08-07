@@ -1,12 +1,11 @@
 "use client";
 
 import Link from "next/link";
-
-//import { About } from "../utils/interface";
 import { SlideIn, Transition } from "./ui/Transitions";
 import { TextReveal } from "./ui/Typography";
 import { ArrowUpRight } from "./ui/Icons";
 import LoaderWrapper from "./LoaderWrapper";
+
 const Hero = ({ about }) => {
     return (
         <section className="h-dvh w-dvw overflow-hidden relative">
@@ -23,6 +22,7 @@ const Hero = ({ about }) => {
                                 className="rounded-full size-28 object-cover"
                             />
                         </Transition>
+
                         <div className="py-6 flex items-center flex-col">
                             <h2 className="md:text-7xl text-4xl font-bold overflow-hidden">
                                 <SlideIn>Hello! I&apos;m {about.name}</SlideIn>
@@ -40,6 +40,8 @@ const Hero = ({ about }) => {
                                 ))}
                             </p>
                         </Transition>
+
+                        {/* Let's Talk Button */}
                         <Transition viewport={{ once: true }}>
                             <Link
                                 href={"#contact"}
@@ -47,20 +49,31 @@ const Hero = ({ about }) => {
                             >
                                 <TextReveal>Let&apos;s talk</TextReveal>
                                 <ArrowUpRight />
-
                             </Link>
                         </Transition>
+
+                        {/* Download Resume Button */}
+                        <Transition viewport={{ once: true }}>
+                            <a
+                                href="/Nagothi_Jaswanth_Sai_Resume.pdf" // place this file in your `public/` folder
+                                download
+                                className="px-5 py-3 mt-4 rounded-full border border-white/50 flex items-center gap-2 group"
+                            >
+                                <TextReveal>Download Resume</TextReveal>
+                                <ArrowUpRight />
+                            </a>
+                        </Transition>
+
+                        {/* Scroll to About Arrow */}
                         <a href="#about" className="custom-margin">
-                            <div className="container" >
+                            <div className="container">
                                 <div className="field">
                                     <div className="scroll"></div>
                                 </div>
                             </div>
                         </a>
-
                     </div>
                 </div>
-
             </LoaderWrapper>
         </section>
     );
